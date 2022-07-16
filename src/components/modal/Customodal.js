@@ -7,7 +7,8 @@ import {
   CloseModal,
   ModalHeader,
 } from './custom.styled'
-import Close from '../../assets/icons/close.svg'
+// import Close from '../../assets/icons/close.svg'
+import {RiMenu3Fill, RiCloseFill } from 'react-icons/ri'
 
 export const CustomModal = ({ children, handleClose, title }) => {
   return (
@@ -20,7 +21,7 @@ export const CustomModal = ({ children, handleClose, title }) => {
               {title}
             </span>
           </div>
-          <CloseModal onClick={() => handleClose(false)} src={Close} alt={''} />
+          <CloseModal onClick={() => handleClose(false)} src={<RiCloseFill/>} alt={''} />
         </ModalHeader>
         {children}
       </ModalWrapper>

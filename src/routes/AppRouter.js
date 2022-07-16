@@ -21,7 +21,7 @@ const AppRouter = () => {
               );
             })}
           </Routes>
-          <Toaster
+          {/* <Toaster
           position="top-center"
           toastOptions={{
             className: '',
@@ -34,7 +34,7 @@ const AppRouter = () => {
             },
             duration: 4000,
           }}
-        />
+        /> */}
         </Router>
       </Suspense>
     )

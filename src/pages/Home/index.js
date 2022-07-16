@@ -5,7 +5,7 @@ import {HomeCardData} from '../../constants/domi'
 import { Select } from 'antd';
 import 'antd/dist/antd.min.css'
 import {BiSearch} from 'react-icons/bi'
-
+// import {CustomModal} from '../../components/modal/Customodal'
 
 
 
@@ -32,6 +32,7 @@ const Home = () => {
 
 
                 </HomeMainContainer>
+                
             
         </HomeWrapper>
     )
