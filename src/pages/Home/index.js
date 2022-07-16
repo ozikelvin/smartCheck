@@ -1,15 +1,18 @@
-import React, { Fragment } from 'react'
+import React, { Fragment , useState } from 'react'
 import {HomeWrapper, HomeCardWrapper, HomeMainContainer, HomeSearch, SearchInput, Search} from './home.styled'
 import HomeCard from '../../components/HomeCard'
 import {HomeCardData} from '../../constants/domi'
 import { Select } from 'antd';
 import 'antd/dist/antd.min.css'
 import {BiSearch} from 'react-icons/bi'
-
+import { SmallModal } from  "../../components/modal/Modal";
 
 
 
 const Home = () => {
+
+    const [show , setShow] = useState(true);
+
     return (
         <HomeWrapper>
             <HomeCardWrapper>
@@ -29,7 +32,13 @@ const Home = () => {
                     <Select defaultValue="All Servers"/>
                     <Select defaultValue="Health Check Status"/>
                 </HomeSearch>
-
+                   {
+                    show ?  <SmallModal closeModal={setShow} title={'Small'} >
+                        <div>
+                            helloo
+                        </div>
+                    </SmallModal> : <div></div>
+                   }
 
                 </HomeMainContainer>
             
