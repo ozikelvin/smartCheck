@@ -79,8 +79,3 @@ export const TableBody = [
 ]
 
 
-// [
-//     ['application', 'servers mapped', 'last scan date', 'status', 'action'],
-//     ['application', 'servers mapped', 'last scan date', 'status', 'action'],
-//     ['application', 'servers mapped', 'last scan date', 'status', 'action'],
-// ].map((item, id) => ([id + 1, ...item]));
