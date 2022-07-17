@@ -41,14 +41,11 @@ export const HomeSearch = styled.div`
     } */
 `
 export const Search = styled.div`
-    /* display: flex; */
     position: relative;
     
     @media screen and (max-width: 900px) {
         flex: none;
-        /* width: 100%; */
         margin: auto 50%;
-        /* margin-inline: 10% auto; */
     }
 
     .search-icon{

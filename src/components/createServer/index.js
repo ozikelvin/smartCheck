@@ -1,26 +1,20 @@
 import React from 'react'
 import FormBuilder from '../../container/formBuilder'
-import { Form }  from 'antd';
+import { Form } from 'antd';
 import { CREATE_FORM } from '../../constants/domi';
 import Button from '../Button';
 
 
-const CreateServer = () =>{
- 
-    const onSubmit = (values) =>{
-        console.log(values)
-    }
+const CreateServer = () =>
+{
+    // Methods
+    const onSubmit = (values) => { console.log(values); };
 
-return (
-<Form 
-name="Create Account"
-        initialValues={{
-          remember: true,
-        }}
-
-        layout={'inline'}
-        onFinish={onSubmit}
- >
+    return (
+        <Form
+            onFinish={onSubmit} name="Create Account"
+            layout={'inline'} initialValues={{ remember: true, }}
+        >
     <FormBuilder 
         formData={CREATE_FORM}
      />
@@ -34,4 +28,4 @@ name="Create Account"
 }
 
 
-export default CreateServer
+export default CreateServer;

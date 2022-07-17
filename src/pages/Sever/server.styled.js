@@ -3,18 +3,24 @@ import styled from 'styled-components/macro';
 
 export const HomeMainContainer = styled.div`
     margin: 2rem;
-    padding:3rem 2rem;
     background: #fff;
+    padding: 3em 2em;
+    
 `
 
 export const Search = styled.div`
+    margin: 0 1em;
     position: relative;
 
+    @media screen and (max-width: 900px) {
+        flex: none;
+        margin: 1em 50%;
+    }
+
     .search-icon{
+        top: 40%;
+        left: 1em;
         position: absolute;
-        top:17px;
-        // color:#B3B3B480;
-        left:14px;
     }
 `
 export const SearchInput = styled.input`
@@ -24,10 +30,23 @@ export const SearchInput = styled.input`
     padding:0.7rem 3rem;
     outline: none;
     border-radius: 5px;
-`
+`;
 
 export const HomeSearch = styled.div`
     display: flex;
-    justify-content:space-around ;
-    gap:4rem;
-`
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 2em;
+    justify-content:space-around;
+
+    [title] {
+        margin-right: 2em;
+    }
+
+    button {
+        @media screen and (max-width: 60em) {
+            font-size: 0.8em;
+            padding: 0.7em 2em;
+        }
+    }
+`;
