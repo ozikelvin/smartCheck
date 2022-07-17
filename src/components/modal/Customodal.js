@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './modal.css'
 import {
-  BootModal,
-  CustoModal,
+  // BootModal,
+  // CustoModal,
   ModalWrapper,
   CloseModal,
   ModalHeader,
 } from './custom.styled'
 // import Close from '../../assets/icons/close.svg'
-import {RiMenu3Fill, RiCloseFill } from 'react-icons/ri'
+import {RiCloseFill } from 'react-icons/ri'
 
 export const CustomModal = ({ children, handleClose, title }) => {
   return (

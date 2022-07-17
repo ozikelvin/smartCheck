@@ -5,8 +5,8 @@ import { HomeCardData, TableHeader,TableBody } from '../../constants/domi'
 import { Select } from 'antd';
 import 'antd/dist/antd.min.css'
 import {BiSearch} from 'react-icons/bi'
-// import {CustomModal} from '../../components/modal/Customodal'
-import { BiSearch } from 'react-icons/bi'
+
+
 import Table from '../../components/Table';
 
 
@@ -28,7 +28,7 @@ const Home = () =>
 
             <HomeMainContainer>
                 <HomeSearch>
-                    <Search><BiSearch className="search-icon" /><SearchInput placeholder="Enter a search keyword" /></Search>
+                    <Search><BiSearch className="search-icon" /><SearchInput placeholder="Enter search keyword" /></Search>
                     <Select defaultValue="All Application" />
                     <Select defaultValue="All Servers" />
                     <Select defaultValue="Health Check Status" />
