@@ -14,5 +14,6 @@ export const ButtonContainer = styled.button`
     border: none;
     cursor: pointer;
     background: #49D3FF;
+    margin-inline: 0.5em;
 
 `

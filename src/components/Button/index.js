@@ -4,7 +4,7 @@ import { ButtonContainer } from "./button.styled";
 import LoadingOutlined from "@ant-design/icons/LoadingOutlined"
 
 const Button = ({
-  onClick = () => {},
+  onClick = () => { },
   label = "button",
   icon,
   variant = "",
@@ -14,17 +14,16 @@ const Button = ({
   loading,
   style,
   ...rest
-}) => {
+}) =>
+{
   return (
     <ButtonContainer
-      onClick={onClick}
-      type={type}
-      style={style}
-      disabled={loading}
-      className={`${variant} ${className}`}
       {...rest}
+      type={type} style={style}
+      onClick={onClick} disabled={loading}
+      className={`${variant} ${className}`}
     >
-        {loading ? <LoadingOutlined style={{ position: "relative", bottom: "5px" }} />: label}
+      {loading ? <LoadingOutlined style={{ position: "relative", bottom: "5px" }} /> : label}
     </ButtonContainer>
   );
 };
