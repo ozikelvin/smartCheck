@@ -39,11 +39,12 @@ export const HomeCardData = [
     }
 ]
 
-export const TableHeader = ['s/n', 'application', 'servers mapped', 'last scan date', 'status', 'action'];
+export const TableHeader = ['s/n', 'application', 'servers mapped', 'last scan date', 'status', 'action', ""];
 export const TableBody = [
     {
-        sn:20,
+        sn:"20",
         appName:'APPLICATION',
+        online:true,
         servers:[
             {
             name:'server 1'
@@ -59,8 +60,9 @@ export const TableBody = [
         status:'good'
     },
     {
-        sn:30,
+        sn:"30",
         appName:'APPLICATION 2',
+        online:false,
         servers:[
         {
             name:'server 1'

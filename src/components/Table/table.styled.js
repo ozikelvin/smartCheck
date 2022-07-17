@@ -58,20 +58,15 @@ export const TR = styled.tr`
 `;
 
 export const TD = styled.td`
-    text-align: center;
-    vertical-align: middle;
+   
 
-    &:nth-child(5),&:nth-child(2) {
-        text-align: left;
+    .circle {
+      width: 60px;
+      height: 60px;
+      color:green;
+      background: green;
+      border-radius: 60px;
     }
 
-    &:nth-child(6) {
-        text-align: right;
-        padding-inline: 5% 1em;
-
-        svg {
-            margin-inline: 0.5em;
-            transform: scaleX(0.2);
-        }
-    }
+   
 `;

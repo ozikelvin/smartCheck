@@ -1,11 +1,11 @@
-import Row from "./row";
+
 import { BsFillFilePdfFill as File } from "react-icons/bs";
 import { Table, Caption, Head, Body, TR, TH } from "./table.styled";
 import { SmallModal } from "../modal/Modal";
 import React, { useState } from "react";
-import ServerResult from "../result";
 
-const TableComponent = ({ header = [], body = [] }) => {
+
+const TableComponent = ({ header = [], body = [] , ChildComponent , Tbody }) => {
   const [show, setShow] = useState(false);
 
   const [serverModalValue, setServerModalValue] = useState({});
@@ -14,7 +14,7 @@ const TableComponent = ({ header = [], body = [] }) => {
     <Table>
       {show ? (
         <SmallModal closeModal={setShow} title={"Health Checks"}>
-          <ServerResult {...serverModalValue} />
+          <ChildComponent {...serverModalValue} />
         </SmallModal>
       ) : (
         <thead></thead>
@@ -31,13 +31,7 @@ const TableComponent = ({ header = [], body = [] }) => {
           ))}
         </TR>
       </Head>
-      <Body>
-        {body.map((item, key) => (
-          <TR key={key}>
-            <Row setValue={setServerModalValue} setShow={setShow} item={item} />
-          </TR>
-        ))}
-      </Body>
+          <Tbody setShow={setShow} setValue={setServerModalValue} />
     </Table>
   );
 };
