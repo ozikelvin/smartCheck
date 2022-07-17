@@ -18,7 +18,7 @@ export const Search = styled.div`
     }
 `
 export const SearchInput = styled.input`
-    width:300px;
+  
     border:1px solid #B3B3B480;
     background:#B3B3B480;
     padding:0.7rem 3rem;
@@ -28,6 +28,6 @@ export const SearchInput = styled.input`
 
 export const HomeSearch = styled.div`
     display: flex;
-    align-items: center;
-    gap:20px;
+    justify-content:space-around ;
+    gap:4rem;
 `

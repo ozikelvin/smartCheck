@@ -1,6 +1,9 @@
 import React from 'react'
 import FormBuilder from '../../container/formBuilder'
 import { Form }  from 'antd';
+import { CREATE_FORM } from '../../constants/domi';
+import Button from '../Button';
+
 
 const CreateServer = () =>{
  
@@ -18,7 +21,14 @@ name="Create Account"
         layout={'horizontal'}
         onFinish={onSubmit}
  >
-    
+    <FormBuilder 
+        formData={CREATE_FORM}
+     />
+
+        <div>
+            <Button type={'submit'} label='Create'  />
+        </div>
+
 </Form>
 )
 }

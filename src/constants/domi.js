@@ -162,7 +162,47 @@ export const ServerTableBody = [
 
     },
 
+]
 
-
-
+export const CREATE_FORM = [
+    {
+        name:'server Name',
+        type: "text",
+        placeholder: "Enter Referral code",
+        required: false,
+        className: "  mt-3 mx-lg-3 w-100 py-4",
+        disabled: false,
+        inputClassName: 'ant-col-lg-10 ant-col-18',
+        message: "",
+    },
+    {
+        name:'server IP',
+        type: "text",
+        placeholder: "Enter Referral code",
+        required: false,
+        className: "  mt-3 mx-lg-3 w-100 py-4",
+        disabled: false,
+        inputClassName: 'ant-col-lg-10 ant-col-18',
+        message: "",
+    },
+    {
+        name:'CPU',
+        type: "text",
+        placeholder: "Enter Referral code",
+        required: false,
+        className: "  mt-3 mx-lg-3 w-100 py-4",
+        disabled: false,
+        inputClassName: 'ant-col-lg-10 ant-col-18',
+        message: "",
+    },
+    {
+        name:'storage',
+        type: "text",
+        placeholder: "Enter Referral code",
+        required: false,
+        className: "  mt-3 mx-lg-3 w-100 py-4",
+        disabled: false,
+        inputClassName: 'ant-col-lg-10 ant-col-18',
+        message: "",
+    }
 ]

@@ -5,8 +5,7 @@ import TextField from '../../components/textField/textField';
 
 const FormBuilder = ({ 
 
-  formData = [], className, col, 
- extraChild, values }) =>
+  formData = [], className, values }) =>
 {
 
   return (
@@ -18,10 +17,7 @@ const FormBuilder = ({
             </div>
           )}
         </div>
-        <div className={col}>
-          {extraChild && extraChild}
-        </div>
-      
+       
     </div>
   )
 }
