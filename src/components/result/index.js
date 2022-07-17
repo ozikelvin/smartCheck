@@ -1,23 +1,29 @@
 import React from 'react'
 
+import {ServerResultWrapper, ResultUl, Hr, ResultLi, ResultP} from './serverResult.styled'
+
+
 const ServerResult = ({appName ,servers =[] 
 }) =>{
 
 
     return (
-        <div>
-        <p>{appName}</p>
-        <p> endpoint</p>
-        <ul>
+        <ServerResultWrapper>
+        <ResultP>{appName}</ResultP>
+        <Hr/>
+        <ResultP> End point</ResultP>
+        <Hr/>
+        <ResultUl>
             {
                 servers.map((item , i) =>(
-                    <li>
+                    <ResultLi>
                         {item?.name}
-                    </li>
+                        <Hr/>
+                    </ResultLi>
                 ))
             }
-        </ul>
-        </div>
+        </ResultUl>
+        </ServerResultWrapper>
     )
 }
 export default ServerResult
