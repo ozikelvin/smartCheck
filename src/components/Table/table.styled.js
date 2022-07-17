@@ -87,7 +87,9 @@ export const TD = styled.td`
     }
 
     button {
-        font-size: 0.7em;
+        @media screen and (max-width: 60em) {
+            font-size: 0.7em;
+        }
     }
 
     b {
