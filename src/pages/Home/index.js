@@ -1,11 +1,10 @@
-import React, { Fragment , useState } from 'react'
+import React, { Fragment  } from 'react'
 import {HomeWrapper, HomeCardWrapper, HomeMainContainer, HomeSearch, SearchInput, Search} from './home.styled'
 import HomeCard from '../../components/HomeCard'
 import { HomeCardData, TableHeader,TableBody } from '../../constants/domi'
 import { Select } from 'antd';
 import 'antd/dist/antd.min.css'
 import {BiSearch} from 'react-icons/bi'
-import { SmallModal } from  "../../components/modal/Modal";
 import Table from '../../components/Table';
 
 

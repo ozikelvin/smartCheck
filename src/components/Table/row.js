@@ -1,6 +1,6 @@
 import Button from "../Button";
 import { TD } from "./table.styled";
-import { HiMenu as Menu } from "react-icons/hi";
+import {  HiDotsVertical } from "react-icons/hi";
 
 const Row = ({ item, setValue, setShow }) => {
   const style = {
@@ -37,7 +37,7 @@ const Row = ({ item, setValue, setShow }) => {
           label="view result"
           style={style}
         />
-        <Menu className="mx-2" />
+       <HiDotsVertical className="mx-3" />
       </td>
     </>
   );

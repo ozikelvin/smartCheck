@@ -25,7 +25,6 @@ const Navbar = ({menu}) => {
                 className={ pathname === '/application' ? 'active-tab ' : 'inactive' }
                  to="/application"><img src={ApplicationIcon} alt="home"/>Application</NavLink>
 
-
             </NavLinkContainer>
             <NavButtonContainer>
                 <Button className={"navbutton"} label={"Check Health Status"}/>
