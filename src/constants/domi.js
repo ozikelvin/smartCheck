@@ -114,3 +114,55 @@ export const TableBody = [
 ]
 
 
+export const ServerTableHeader = ['s/n', 'server name', 'ip address', 'cpu(%)', 'memory(%)', 'storage(%)', 'action']
+
+export const ServerTableBody = [
+    {
+        sn:1,
+        serverName:'Server 1',
+        online: true,
+        ipAddress: 'IP ADDRESS',
+        cpu: '85.6',
+        memory:'73.9',
+        storage:'50',
+
+
+    },
+    {
+        sn:2,
+        serverName:'Server 2',
+        online: true,
+        ipAddress: 'IP ADDRESS',
+        cpu: '84.6',
+        memory:'72.4',
+        storage:'70',
+
+
+    },
+    {
+        sn:3,
+        serverName:'Server 3',
+        online: true,
+        ipAddress: 'IP ADDRESS',
+        cpu: '82.6',
+        memory:'71.8',
+        storage:'60',
+
+
+    },
+    {
+        sn:4,
+        serverName:'Server 4',
+        online: false,
+        ipAddress: 'IP ADDRESS',
+        cpu: '84.4',
+        memory:'76.8',
+        storage:'40',
+
+
+    },
+
+
+
+
+]

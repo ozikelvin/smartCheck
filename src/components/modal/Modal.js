@@ -1,17 +1,17 @@
 import React from "react";
 import "./modal.css";
 import Close from "../../assets/icons/close.svg";
-
+import {SmallModalWrapper, SmallModalTitle, BackDrop} from './modal.styled'
 
 
 export const SmallModal = ({ children, closeModal, title }) => {
   return (
     <>
-      <div className="backDrop" onClick={() => closeModal(false)}></div>
+      <BackDrop onClick={() => closeModal(false)}></BackDrop>
 
-      <div className="small-modal">
+      <SmallModalWrapper>
         <div className="m-0 d-flex justify-content-between">
-          <p className="kv-modal-title">{title}</p>
+          <SmallModalTitle>{title}</SmallModalTitle>
           <img
             className="modalCloseImg"
             onClick={() => closeModal(false)}
@@ -21,7 +21,7 @@ export const SmallModal = ({ children, closeModal, title }) => {
         </div>
 
         {children || "Enter element here"}
-      </div>
+      </SmallModalWrapper>
     </>
   );
 };
