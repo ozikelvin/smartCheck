@@ -33,7 +33,7 @@ const TableBodyComponent = ({setValue, setShow }) => {
             <TD> { item.online ? <i className='bi bi-dot' style={{color:'#00ff00', fontSize:'47px'}}></i> : <i className='bi bi-dot' style={{color:'#f00', fontSize:'47px'}}></i> } { item.appName } </TD>
             <TD> { item?.servers?.length } </TD>
             <TD> { item?.date } </TD>
-            <TD> { item?.status === 'good' ? <i className='bi bi-check-circle'
+            <TD> { item?.status === 'Healthy' ? <i className='bi bi-check-circle'
             style={{color:'#00ff00', fontSize:'20px'}}
             ></i> : <i className='bi bi-warning'
             style={{backgroundColor:'#ffefa0', fontSize:'47px'}}

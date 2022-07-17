@@ -57,7 +57,7 @@ export const TableBody = [
         }
     ],
         date:new Date(2016 , 6, 12).toISOString().substring(0, 10),
-        status:'good'
+        status:'Healthy'
     },
     {
         sn:"30",
@@ -75,7 +75,41 @@ export const TableBody = [
         }
     ],
         date:new Date(2018 , 7 , 17).toISOString().substring(0, 10),
-        status:'bad'
+        status:'Unhealthy'
+    },
+    {
+        sn:3,
+        appName:'APPLICATION 3',
+        servers:[
+        {
+            name:'server 1'
+        },
+        {
+            name:'server 2'
+        },
+        {
+            name:'server 3'
+        }
+    ],
+        date:new Date(2018 , 7 , 17).toISOString().substring(0, 10),
+        status:'Healthy'
+    },
+    {
+        sn:4,
+        appName:'APPLICATION 4',
+        servers:[
+        {
+            name:'server 1'
+        },
+        {
+            name:'server 2'
+        },
+        {
+            name:'server 3'
+        }
+    ],
+        date:new Date(2018 , 7 , 17).toISOString().substring(0, 10),
+        status:'Healthy'
     }
 ]
 

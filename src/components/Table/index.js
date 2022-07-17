@@ -5,7 +5,7 @@ import { SmallModal } from "../modal/Modal";
 import React, { useState } from "react";
 
 
-const TableComponent = ({ header = [], body = [] , ChildComponent , Tbody }) => {
+const TableComponent = ({ header = [], ChildComponent , Tbody }) => {
   const [show, setShow] = useState(false);
 
   const [serverModalValue, setServerModalValue] = useState({});
