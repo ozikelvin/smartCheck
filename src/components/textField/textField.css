@@ -1,14 +1,11 @@
 .field input,
 .select-field select {
   background: #ffffff;
-  border-radius: 0.25rem;
-  height: 2.25rem;
   font-size: 1rem;
   line-height: 1.25rem;
   color: black;
   border: none;
-  padding: 0.5rem 0.875rem;
-
+  padding: 0.2rem 0.875rem !important;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;

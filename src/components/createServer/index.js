@@ -18,14 +18,14 @@ name="Create Account"
           remember: true,
         }}
 
-        layout={'horizontal'}
+        layout={'inline'}
         onFinish={onSubmit}
  >
     <FormBuilder 
         formData={CREATE_FORM}
      />
 
-        <div>
+        <div className='ant-col-lg-24 mt-5' >
             <Button type={'submit'} label='Create'  />
         </div>
 

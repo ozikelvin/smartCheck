@@ -43,11 +43,11 @@ const TextField = ({
           initialValue={value}
           label={label}
         >
-          <Input
+          <input
             id={name}
             style={{
               border: '1px solid #E5E5E5',
-              borderRadius: '10px'
+              borderRadius: '1px'
             }}
             onBlur={onBlur}
             onFocus={onFocus}
