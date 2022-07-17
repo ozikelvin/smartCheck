@@ -39,13 +39,18 @@ export const Body = styled.tbody`
 
 export const TH = styled.th`
     padding: 1em;
+    line-height: 1;
     font-weight: 500;
+    text-align: center;
     background-color: #f5f5f5;
     text-transform: uppercase;
-    text-align: center;
 
     &:nth-child(5),&:nth-child(2) {
         text-align: left;
+    }
+
+    @media screen and (max-width: 60em) {
+        font-size: 0.7em;
     }
 `;
 
@@ -59,33 +64,37 @@ export const TR = styled.tr`
 `;
 
 export const TD = styled.td`
-   
+   text-align: center;
+   white-space: nowrap;
 
-<<<<<<< HEAD
-    .circle {
-      width: 60px;
-      height: 60px;
-      color:green;
-      background: green;
-      border-radius: 60px;
-=======
-    &:nth-child(5),&:nth-child(2) {
+   i {
+    margin-right: 0.5em;
+   }
+
+    &:nth-child(5), &:nth-child(2) {
         text-align: left;
         padding-left: 1rem;
->>>>>>> 201597ab38a2b20996509897eac6a738a87559a7
     }
+
     &:nth-child(3){
         color: #499DFF;
     }
+
     &:nth-child(5){
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-        gap:5px;
         padding-top: 1rem;
+        align-items: center;
     }
-    
 
-   
+    button {
+        font-size: 0.7em;
+    }
+
+    b {
+        font-weight: 400;
+        
+        @media screen and (max-width: 80em){
+            display: none;
+        }
+    }
 `;
