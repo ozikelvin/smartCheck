@@ -57,7 +57,7 @@ const Server = () =>
   const style = { paddingInline: '2em', marginLeft: 'auto' };
 
   return (
-    <div style={{ padding: '1.5rem 2rem' }} >
+    <div style={{ padding: '1.5em 2em' }} >
       {show ? (
         <SmallModal closeModal={setShow} title={"Create Server"}>
           <CreateServer />
