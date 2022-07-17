@@ -2,7 +2,7 @@ import styled from 'styled-components/macro'
 
 
 export const SmallModalWrapper = styled.div`
-        width: 70%;
+        width: 50%;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -14,7 +14,7 @@ export const SmallModalWrapper = styled.div`
         overflow-x: hidden;
         overflow-y: auto;
         text-align: justify;
-        height: 50vh;
+        height: 70vh;
 
         @media (max-width: 768px) {
             width: 90%;

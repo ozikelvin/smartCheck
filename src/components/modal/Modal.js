@@ -1,5 +1,5 @@
 import React from "react";
-import "./modal.css";
+
 import Close from "../../assets/icons/close.svg";
 import {SmallModalWrapper, SmallModalTitle, BackDrop} from './modal.styled'
 

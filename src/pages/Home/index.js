@@ -35,7 +35,7 @@ const TableBodyComponent = ({ setValue, setShow }) =>
             <TD> {item.online ?
               <i className='bi bi-dot' style={{ color: '#00ff00', fontSize: '47px' }}></i> :
               <i className='bi bi-dot' style={{ color: '#f00', fontSize: '47px' }}></i>} 
-              <b>{item.appName}</b>
+              {item.appName}
             </TD>
             <TD> {item?.servers?.length} </TD>
             <TD> {item?.date} </TD>
