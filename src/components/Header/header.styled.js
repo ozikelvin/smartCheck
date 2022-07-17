@@ -1,13 +1,15 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
 
 export const HeaderWrapper = styled.div`
-    width: 100vw;
-    background: #1B1464;
-    padding: 1rem 2rem;
+    margin: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #1B1464;
+    box-sizing: border-box;
     align-items: space-between;
+    justify-content: space-between;
 
 `
 
@@ -24,6 +26,4 @@ export const HeaderMenu = styled.div`
     @media (max-width: 990px){
         display: flex;
     }
-
-
-`
+`;

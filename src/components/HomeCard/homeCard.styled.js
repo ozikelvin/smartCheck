@@ -1,72 +1,67 @@
 import styled from 'styled-components'
 
-
-export const HomeCardWrapper = styled.div`
-    width: 400px;
-    // height: 228px;
+export const Wrapper = styled.div`
+    margin: 1em;
+    padding: 1em;
+    flex: 0 1 26em;
     background: #fff;
-    padding: 0.5rem 1.5rem;
-    border: 0.4px solid #707070;
     border-radius: 4px;
-    margin-right: 2rem;
+    border: 0.4px solid #707070;
+`;
 
-
-`
-export const CardHeader = styled.div`
-
-
-    h2{
-        font-size: 16px;
+export const Header = styled.div`
+    h2 {
         color:#262626;
+        font-size: 16px;
         font-weight: normal;
     }
+`;
 
-`
-export const CardBody = styled.div`
+export const Body = styled.div`
     display: flex;
-    justify-content: space-between;
     padding:1.5rem;
+    justify-content: space-between;
 
 `
 export const CircleContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     h2{
         font-size:14px;
         font-weight: normal;
     }
+`;
 
-`
 export const Circle = styled.div`
     width:66px;
     height:66px;
-    border-radius: 50%;    
-    border:${(props)=>props.border ||'none' } ;
-    background: ${(props)=>props.Bgcolor||'#fff'};
     display: flex;
+    align-items: center;
+    border-radius: 50%;
     justify-content: center;
-    align-items: center;
-    color: ${(props)=>props.color||'#fff'};
+    color: ${(props) => props.color || '#fff'};
+    border:${(props) => props.border || 'none'} ;
+    background: ${(props) => props.Bgcolor || '#fff'};
 
-`
+`;
+
 export const CountContainer = styled.div`
-    display: flex;
     margin: auto;
-    flex-direction: column;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     
     h1{
         color: #1B1464;
         font-size: 53px;
     }
+
     h4{
         font-size:14px;
         font-weight: normal;
-
     }
-
-
-`
+`;
