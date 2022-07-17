@@ -42,6 +42,7 @@ export const TH = styled.th`
     font-weight: 500;
     background-color: #f5f5f5;
     text-transform: uppercase;
+    text-align: center;
 
     &:nth-child(5),&:nth-child(2) {
         text-align: left;
@@ -63,7 +64,20 @@ export const TD = styled.td`
 
     &:nth-child(5),&:nth-child(2) {
         text-align: left;
+        padding-left: 1rem;
     }
+    &:nth-child(3){
+        color: #499DFF;
+    }
+    &:nth-child(5){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap:5px;
+        padding-top: 1rem;
+    }
+    
 
     &:nth-child(6) {
         text-align: right;

@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react'
-import { HomeWrapper, HomeCardWrapper, HomeMainContainer, HomeSearch, SearchInput, Search } from './home.styled'
+import React, { Fragment  } from 'react'
+import {HomeWrapper, HomeCardWrapper, HomeMainContainer, HomeSearch, SearchInput, Search} from './home.styled'
 import HomeCard from '../../components/HomeCard'
 import { HomeCardData, TableHeader,TableBody } from '../../constants/domi'
 import { Select } from 'antd';
@@ -10,10 +10,10 @@ import {BiSearch} from 'react-icons/bi'
 import Table from '../../components/Table';
 
 
+const Home = () => {
 
+  
 
-const Home = () =>
-{
     return (
         <HomeWrapper>
             <HomeCardWrapper>
@@ -33,6 +33,7 @@ const Home = () =>
                     <Select defaultValue="All Servers" />
                     <Select defaultValue="Health Check Status" />
                 </HomeSearch>
+                 
 
                 <Table header={TableHeader} body={TableBody} />
             </HomeMainContainer>

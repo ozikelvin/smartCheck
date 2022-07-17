@@ -1,15 +1,48 @@
-import Button from '../Button';
-import { TD } from './table.styled';
-import { HiMenu as Menu } from 'react-icons/hi';
+import Button from "../Button";
+import { TD } from "./table.styled";
+import {BsCheckCircleFill} from 'react-icons/bs'
+import {  HiDotsVertical } from "react-icons/hi";
+import WarningIcon from '../../assets/icons/warning-sign.png'
 
-export default ({ item }) =>
-{
-    const style = { margin: '1em auto', padding: '0.2em 1em', borderRadius: '0.2em', };
-    // return (item.map((val, id) => id == 5 ? <Button key={val} label='view result' style={style} /> : <TD key={val}>{val}</TD>))
-    return item.map((val, id) => <TD key={val}>
-        {id == 5 ? <>
-            <Button key={val} label='view result' style={style} />
-            <Menu />
-        </> : val}
-    </TD>)
+const Row = ({ item, setValue, setShow }) => {
+  const style = {
+    margin: "1em auto",
+    padding: "0.2em 1em",
+    borderRadius: "0.2em",
+  };
+  const arrKey = Object.keys(item);
+
+  return (
+    <>
+      {arrKey.map((keyVal, i) => (
+        <TD key={i}>
+          {Array.isArray(item[keyVal])
+            ? `${item[keyVal]?.length} servers`
+            : item[keyVal]}
+          {item[keyVal] === "Healthy" ? (
+            <BsCheckCircleFill color="#14DB77" fontSize="1.3em"/>
+          ) : item[keyVal] === "Unhealthy" ? (
+            <img style ={{width:'21px', height:'21px'}} src={WarningIcon} alt="warning"/>
+          ) : (
+            <></>
+          )}
+        </TD>
+      ))}
+
+      <td style = {{textAlign:'center'}} className="">
+        <Button
+          className=""
+          onClick={() => {
+            setValue(item);
+            setShow(true);
+          }}
+          label="view result"
+          style={style}
+        />
+       <HiDotsVertical className="mx-3" />
+      </td>
+    </>
+  );
 };
+
+export default Row;

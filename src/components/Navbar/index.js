@@ -3,17 +3,27 @@ import {NavWrapper, NavLinkContainer, NavButtonContainer, NavLink,NavContainer, 
 import HomeIcon from '../../assets/icons/home-icon.svg'
 import ServerIcon from '../../assets/icons/server-icon.svg'
 import ApplicationIcon from '../../assets/icons/application-icon.svg'
-import Button from '../Button'
+import Button from '../Button';
+import { useLocation } from "react-router-dom";
 
 const Navbar = ({menu}) => {
+
+    const { pathname } = useLocation();
+    
+
     return (
         <NavContainer>
         <NavWrapper>
             <NavLinkContainer>
-                <NavLink to="/"><img src={HomeIcon} alt="home"/>Home</NavLink>
-                <NavLink to="/server"><img src={ServerIcon} alt="home"/>Server</NavLink>
-                <NavLink to="/application"><img src={ApplicationIcon} alt="home"/>Application</NavLink>
-
+                <NavLink 
+                className={ pathname === '/' ? 'active-tab ' : 'inactive' }
+                 to="/"><img src={HomeIcon}  alt="home"/>Home</NavLink>
+                <NavLink 
+                className={ pathname === '/server' ? 'active-tab ' : 'inactive' }
+                to="/server"><img src={ServerIcon} alt="home"/>Server</NavLink>
+                <NavLink 
+                className={ pathname === '/application' ? 'active-tab ' : 'inactive' }
+                 to="/application"><img src={ApplicationIcon} alt="home"/>Application</NavLink>
 
             </NavLinkContainer>
             <NavButtonContainer>
