@@ -12,7 +12,6 @@ const Header = ({menu, setMenu}) => {
             </HeaderLogo>
             <HeaderMenu>
                 {menu?<RiCloseFill onClick ={()=>setMenu(false)} color="#fff" fontSize="2rem"/>:<RiMenu3Fill onClick ={()=>setMenu(true)}color="#fff" fontSize="2rem"/>  }
-
             </HeaderMenu>
         </HeaderWrapper>
     )

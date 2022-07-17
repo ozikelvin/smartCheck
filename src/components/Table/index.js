@@ -7,7 +7,7 @@ import ServerResult from "../result";
 
 const TableComponent = ({ header = [], body = [] }) => {
   const [show, setShow] = useState(false);
-  
+
   const [serverModalValue, setServerModalValue] = useState({});
 
   return (
@@ -17,7 +17,7 @@ const TableComponent = ({ header = [], body = [] }) => {
           <ServerResult {...serverModalValue} />
         </SmallModal>
       ) : (
-        <div></div>
+        <thead></thead>
       )}
       <Caption>
         <File />

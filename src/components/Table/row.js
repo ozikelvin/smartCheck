@@ -27,7 +27,7 @@ const Row = ({ item, setValue, setShow }) => {
         </TD>
       ))}
 
-      <div className="mx-3">
+      <td className="mx-3">
         <Button
           className=""
           onClick={() => {
@@ -38,7 +38,7 @@ const Row = ({ item, setValue, setShow }) => {
           style={style}
         />
         <Menu className="mx-2" />
-      </div>
+      </td>
     </>
   );
 };
