@@ -60,7 +60,7 @@ const Server = () =>
     <div style={{ padding: '1.5em 2em' }} >
       {show ? (
         <SmallModal closeModal={setShow} title={"Create Server"}>
-          <CreateServer />
+          <CreateServer setShow={setShow} />
         </SmallModal>
       ) : (
         <div />

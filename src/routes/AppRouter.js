@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
 import { Suspense} from "react";
 import { LoadingIcon } from "../components/Loading";
-import { Toaster } from 'react-hot-toast'
 import routes from "./routes";
 
 const AppRouter = () => {

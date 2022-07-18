@@ -1,8 +1,6 @@
 import React from "react";
 import "./textField.css";
-import { Form, Input } from "antd";
-
-const { TextArea } = Input;
+import { Form } from "antd";
 const TextField = ({
   label,
   id = "",

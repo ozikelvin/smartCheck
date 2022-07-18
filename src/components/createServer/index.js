@@ -6,7 +6,7 @@ import Button from '../Button';
 import { Footer } from './style';
 
 
-const CreateServer = () =>
+const CreateServer = ({setShow}) =>
 {
     // Methods
     const onSubmit = (values) => { console.log(values); };
@@ -18,10 +18,10 @@ const CreateServer = () =>
 
     return (
         <Form {...formParams}>
-            <FormBuilder formData={CREATE_FORM} />
+            <FormBuilder formData={CREATE_FORM}  />
 
             <Footer>
-                <Button type={'button'} label='cancel' style={cancel} />
+                <Button type={'button'} label='cancel' style={cancel} onClick={()=> setShow(false)} />
                 <Button type={'submit'} label='Create' style={submit} />
             </Footer>
 
