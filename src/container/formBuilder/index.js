@@ -10,7 +10,7 @@ const FormBuilder = ({ formData = [], className, values }) =>
     <div className='' >
       <div className={className}>
         {formData.map((item, i) =>
-          <div className={item?.inputClassName} key={i}>
+          <div className={item?.className} key={i}>
             <TextField {...item} value={values ? values[item?.name] : ''} />
           </div>
         )}

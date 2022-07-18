@@ -36,7 +36,7 @@ const TableBodyComponent = ({ setValue, setShow }) =>
             <TD>
               <Button
                 style={style} label="edit"
-                onClick={() => { setValue(item); setShow(true); }}
+                // onClick={() => { setValue(item); setShow(true); }}
               />
               <HiDotsVertical className="mx-3" />
             </TD>

@@ -42,74 +42,74 @@ export const HomeCardData = [
 export const TableHeader = ['s/n', 'application', 'servers mapped', 'last scan date', 'status', 'action', ""];
 export const TableBody = [
     {
-        sn:"20",
-        appName:'APPLICATION',
-        online:true,
-        servers:[
+        sn: "20",
+        appName: 'APPLICATION',
+        online: true,
+        servers: [
             {
-            name:'server 1'
-        },
-        {
-            name:'server 2'
-        },
-        {
-            name:'server 3'
-        }
-    ],
-        date:new Date(2016 , 6, 12).toISOString().substring(0, 10),
-        status:'Healthy'
+                name: 'server 1'
+            },
+            {
+                name: 'server 2'
+            },
+            {
+                name: 'server 3'
+            }
+        ],
+        date: new Date(2016, 6, 12).toISOString().substring(0, 10),
+        status: 'Healthy'
     },
     {
-        sn:"30",
-        appName:'APPLICATION 2',
-        online:false,
-        servers:[
-        {
-            name:'server 1'
-        },
-        {
-            name:'server 2'
-        },
-        {
-            name:'server 3'
-        }
-    ],
-        date:new Date(2018 , 7 , 17).toISOString().substring(0, 10),
-        status:'Unhealthy'
+        sn: "30",
+        appName: 'APPLICATION 2',
+        online: false,
+        servers: [
+            {
+                name: 'server 1'
+            },
+            {
+                name: 'server 2'
+            },
+            {
+                name: 'server 3'
+            }
+        ],
+        date: new Date(2018, 7, 17).toISOString().substring(0, 10),
+        status: 'Unhealthy'
     },
     {
-        sn:3,
-        appName:'APPLICATION 3',
-        servers:[
-        {
-            name:'server 1'
-        },
-        {
-            name:'server 2'
-        },
-        {
-            name:'server 3'
-        }
-    ],
-        date:new Date(2018 , 7 , 17).toISOString().substring(0, 10),
-        status:'Healthy'
+        sn: 3,
+        appName: 'APPLICATION 3',
+        servers: [
+            {
+                name: 'server 1'
+            },
+            {
+                name: 'server 2'
+            },
+            {
+                name: 'server 3'
+            }
+        ],
+        date: new Date(2018, 7, 17).toISOString().substring(0, 10),
+        status: 'Healthy'
     },
     {
-        sn:4,
-        appName:'APPLICATION 4',
-        servers:[
-        {
-            name:'server 1'
-        },
-        {
-            name:'server 2'
-        },
-        {
-            name:'server 3'
-        }
-    ],
-        date:new Date(2018 , 7 , 17).toISOString().substring(0, 10),
-        status:'Healthy'
+        sn: 4,
+        appName: 'APPLICATION 4',
+        servers: [
+            {
+                name: 'server 1'
+            },
+            {
+                name: 'server 2'
+            },
+            {
+                name: 'server 3'
+            }
+        ],
+        date: new Date(2018, 7, 17).toISOString().substring(0, 10),
+        status: 'Healthy'
     }
 ]
 
@@ -118,46 +118,46 @@ export const ServerTableHeader = ['s/n', 'server name', 'ip address', 'cpu(%)', 
 
 export const ServerTableBody = [
     {
-        sn:1,
-        serverName:'Server 1',
+        sn: 1,
+        serverName: 'Server 1',
         online: true,
         ipAddress: 'IP ADDRESS',
         cpu: '85.6',
-        memory:'73.9',
-        storage:'50',
+        memory: '73.9',
+        storage: '50',
 
 
     },
     {
-        sn:2,
-        serverName:'Server 2',
+        sn: 2,
+        serverName: 'Server 2',
         online: true,
         ipAddress: 'IP ADDRESS',
         cpu: '84.6',
-        memory:'72.4',
-        storage:'70',
+        memory: '72.4',
+        storage: '70',
 
 
     },
     {
-        sn:3,
-        serverName:'Server 3',
+        sn: 3,
+        serverName: 'Server 3',
         online: true,
         ipAddress: 'IP ADDRESS',
         cpu: '82.6',
-        memory:'71.8',
-        storage:'60',
+        memory: '71.8',
+        storage: '60',
 
 
     },
     {
-        sn:4,
-        serverName:'Server 4',
+        sn: 4,
+        serverName: 'Server 4',
         online: false,
         ipAddress: 'IP ADDRESS',
         cpu: '84.4',
-        memory:'76.8',
-        storage:'40',
+        memory: '76.8',
+        storage: '40',
 
 
     },
@@ -166,43 +166,43 @@ export const ServerTableBody = [
 
 export const CREATE_FORM = [
     {
-        name:'server Name',
-        label:'server Name',
+        name: 'server Name',
+        label: 'server Name',
         type: "text",
         required: false,
         className: " mx-lg-3 w-100 py-4",
         disabled: false,
-        inputClassName: 'ant-col-lg-24 ant-col-20',
+        className: 'ant-col-lg-24 ant-col-20',
         message: "",
     },
     {
-        name:'server IP',
+        name: 'server IP',
         type: "text",
-        label:'server IP',
+        label: 'server IP',
         required: false,
         className: " mx-lg-3 w-100 py-4",
         disabled: false,
-        inputClassName: 'ant-col-lg-24 ant-col-20',
+        className: 'ant-col-lg-24 ant-col-20',
         message: "",
     },
     {
-        name:'CPU',
+        name: 'CPU',
         type: "text",
-        label:'Cpu',
+        label: 'Cpu',
         required: false,
         className: " mx-lg-3 w-100 py-4",
         disabled: false,
-        inputClassName: 'ant-col-lg-24 ant-col-20',
+        className: 'ant-col-lg-24 ant-col-20',
         message: "",
     },
     {
-        name:'storage',
+        name: 'storage',
         type: "text",
-        label:'storage',
+        label: 'storage',
         required: false,
         className: " mx-lg-3 w-100 py-4",
         disabled: false,
-        inputClassName: 'ant-col-lg-24 ant-col-20',
+        className: 'ant-col-lg-24 ant-col-20',
         message: "",
     }
 ]
