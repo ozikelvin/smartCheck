@@ -148,7 +148,6 @@ export const ServerTableBody = [
         memory:'71.8',
         storage:'60',
 
-
     },
     {
         sn:4,
